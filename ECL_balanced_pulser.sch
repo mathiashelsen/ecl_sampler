@@ -8308,6 +8308,7 @@ grid 5.08 mm</description>
 <sheets>
 <sheet>
 <plain>
+<text x="40.64" y="114.3" size="1.778" layer="91">Copyright 2015 by Mathias Helsen, MIT license</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="55.88" y="73.66"/>
