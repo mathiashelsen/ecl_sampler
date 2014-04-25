@@ -11,4 +11,4 @@ The use of ECL enables a digitally controllable delay line to vary  the position
 
 Copyright 2014 by Mathias Helsen 
 
-Pulse generator is copied from the Tektronix S-tsampler from Tektronix, so stthey hold the copyright on this.
+Pulse generator is copied from the Tektronix S-t2 ampler from Tektronix, so stthey hold the copyright on this.
