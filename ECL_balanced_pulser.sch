@@ -8662,7 +8662,6 @@ grid 5.08 mm</description>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="91.44" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 <junction x="175.26" y="96.52"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
@@ -8681,7 +8680,6 @@ grid 5.08 mm</description>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="76.2" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="81.28" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <junction x="175.26" y="81.28"/>
 <pinref part="C12" gate="G$1" pin="1"/>
