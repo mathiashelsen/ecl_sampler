@@ -5927,20 +5927,6 @@ Based on the following sources:
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOD523">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="-0.59" y1="0.4" x2="0.59" y2="0.4" width="0.1016" layer="51"/>
-<wire x1="0.59" y1="0.4" x2="0.59" y2="-0.4" width="0.1016" layer="51"/>
-<wire x1="0.59" y1="-0.4" x2="-0.59" y2="-0.4" width="0.1016" layer="51"/>
-<wire x1="-0.59" y1="-0.4" x2="-0.59" y2="0.4" width="0.1016" layer="51"/>
-<smd name="A" x="0.7" y="0" dx="0.7" dy="0.5" layer="1"/>
-<smd name="C" x="-0.6" y="0" dx="0.7" dy="0.5" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.75" y1="-0.17" x2="-0.54" y2="0.17" layer="51"/>
-<rectangle x1="0.54" y1="-0.17" x2="0.75" y2="0.17" layer="51"/>
-<rectangle x1="-0.59" y1="-0.4" x2="-0.3" y2="0.4" layer="51"/>
-</package>
 <package name="DO35-10">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 2 mm, horizontal, grid 10.16 mm</description>
@@ -5999,23 +5985,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 </package>
 </packages>
 <symbols>
-<symbol name="KD">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="2.675" x2="-0.381" y2="2.04" width="0.254" layer="94"/>
-<wire x1="0.381" y1="2.675" x2="0.381" y2="2.04" width="0.254" layer="94"/>
-<wire x1="1.651" y1="2.04" x2="0.381" y2="2.04" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="2.04" x2="0.381" y2="1.405" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="2.04" x2="-1.651" y2="2.04" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="2.04" x2="-0.381" y2="1.405" width="0.254" layer="94"/>
-<text x="-2.032" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.778" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="D">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -6029,24 +5998,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BB141" prefix="D">
-<description>Capacity &lt;b&gt;DIODE&lt;/b&gt;&lt;p&gt;
-variable-capacitance diode</description>
-<gates>
-<gate name="G$1" symbol="KD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD523">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="1N4148" prefix="D">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 high speed (Philips)</description>
@@ -8227,6 +8178,51 @@ grid 5.08 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="srd">
+<packages>
+<package name="2D524A">
+<smd name="ANODE" x="-2.4" y="0" dx="1.6" dy="2" layer="1" rot="R90"/>
+<smd name="CATHODE" x="2.4" y="0" dx="1.6" dy="2" layer="1" rot="R90"/>
+<wire x1="-1.4" y1="-1.85" x2="1.4" y2="-1.85" width="0" layer="20"/>
+<wire x1="1.4" y1="-1.85" x2="1.4" y2="1.85" width="0" layer="20"/>
+<wire x1="1.4" y1="1.85" x2="-1.4" y2="1.85" width="0" layer="20"/>
+<wire x1="-1.4" y1="1.85" x2="-1.4" y2="-1.85" width="0" layer="20"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SRD">
+<pin name="ANODE" x="-12.7" y="0" visible="off" length="short"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2D524A">
+<gates>
+<gate name="G$1" symbol="SRD" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="2D524A">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8282,7 +8278,6 @@ grid 5.08 mm</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C9" library="resistor" deviceset="C-EU" device="C0805" value="180"/>
 <part name="C10" library="resistor" deviceset="C-EU" device="C0805" value="180"/>
-<part name="D1" library="diode" deviceset="BB141" device=""/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="39"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="39"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -8304,6 +8299,7 @@ grid 5.08 mm</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="R0805"/>
 <part name="Q1" library="transistor-pnp" deviceset="BC636*" device=""/>
+<part name="U$2" library="srd" deviceset="2D524A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8356,7 +8352,6 @@ grid 5.08 mm</description>
 <instance part="GND14" gate="1" x="149.86" y="129.54"/>
 <instance part="C9" gate="G$1" x="162.56" y="96.52" rot="R90"/>
 <instance part="C10" gate="G$1" x="162.56" y="81.28" rot="R90"/>
-<instance part="D1" gate="G$1" x="175.26" y="88.9" rot="R270"/>
 <instance part="R10" gate="G$1" x="175.26" y="106.68" rot="R90"/>
 <instance part="R11" gate="G$1" x="175.26" y="71.12" rot="R90"/>
 <instance part="GND15" gate="1" x="175.26" y="63.5"/>
@@ -8378,6 +8373,7 @@ grid 5.08 mm</description>
 <instance part="GND21" gate="1" x="187.96" y="160.02"/>
 <instance part="R15" gate="G$1" x="175.26" y="149.86" rot="R90"/>
 <instance part="Q1" gate="G$1" x="177.8" y="121.92" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="175.26" y="83.82" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8665,12 +8661,12 @@ grid 5.08 mm</description>
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="91.44" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 <junction x="175.26" y="96.52"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="ANODE"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -8683,14 +8679,14 @@ grid 5.08 mm</description>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="175.26" y1="76.2" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="81.28" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="81.28" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <junction x="175.26" y="81.28"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
 <net name="N$17" class="0">
