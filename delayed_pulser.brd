@@ -74,6 +74,8 @@
 <wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
 <wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<text x="44.45" y="64.77" size="1.778" layer="16" rot="MR0">(C) Mathias Helsen 2014</text>
+<text x="17.78" y="62.23" size="1.778" layer="1">(C) Mathias Helsen 2014</text>
 </plain>
 <libraries>
 <library name="resistor">

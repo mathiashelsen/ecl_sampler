@@ -6516,6 +6516,7 @@ Radiall&lt;p&gt;</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-30.48" y="55.88" size="1.778" layer="91">Copyright 2015 by Mathias Helsen, MIT license</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="20.32" y="20.32" rot="R90"/>
