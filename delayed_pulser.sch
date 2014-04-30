@@ -8080,9 +8080,6 @@ super fast rectifier, 2 A</description>
 <part name="D1" library="diode" deviceset="ES2D" device=""/>
 <part name="D2" library="diode" deviceset="ES2D" device=""/>
 <part name="D3" library="diode" deviceset="ES2D" device=""/>
-<part name="C8" library="resistor" deviceset="C-EU" device="050-035X075" value="0.47"/>
-<part name="C13" library="resistor" deviceset="C-EU" device="050-035X075" value="0.47"/>
-<part name="C14" library="resistor" deviceset="C-EU" device="050-035X075" value="0.47"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="M0805" value="1M"/>
@@ -8096,6 +8093,9 @@ super fast rectifier, 2 A</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="C8" library="resistor" deviceset="C-EU" device="C0805K"/>
+<part name="C13" library="resistor" deviceset="C-EU" device="C0805K"/>
+<part name="C14" library="resistor" deviceset="C-EU" device="C0805K"/>
 </parts>
 <sheets>
 <sheet>
@@ -8162,9 +8162,6 @@ super fast rectifier, 2 A</description>
 <instance part="D1" gate="G$1" x="33.02" y="88.9"/>
 <instance part="D2" gate="G$1" x="40.64" y="96.52" rot="R90"/>
 <instance part="D3" gate="G$1" x="48.26" y="104.14"/>
-<instance part="C8" gate="G$1" x="40.64" y="81.28"/>
-<instance part="C13" gate="G$1" x="58.42" y="88.9"/>
-<instance part="C14" gate="G$1" x="25.4" y="99.06"/>
 <instance part="GND14" gate="1" x="40.64" y="68.58"/>
 <instance part="GND18" gate="1" x="58.42" y="68.58"/>
 <instance part="R11" gate="G$1" x="73.66" y="96.52" rot="R90"/>
@@ -8178,6 +8175,9 @@ super fast rectifier, 2 A</description>
 <instance part="GND21" gate="1" x="-10.16" y="81.28"/>
 <instance part="JP1" gate="G$1" x="96.52" y="101.6"/>
 <instance part="GND22" gate="1" x="91.44" y="101.6" rot="R270"/>
+<instance part="C8" gate="G$1" x="25.4" y="99.06"/>
+<instance part="C13" gate="G$1" x="40.64" y="81.28"/>
+<instance part="C14" gate="G$1" x="58.42" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -8326,14 +8326,14 @@ super fast rectifier, 2 A</description>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="40.64" y1="71.12" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="58.42" y1="71.12" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -8734,30 +8734,29 @@ super fast rectifier, 2 A</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="88.9" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="93.98" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <junction x="40.64" y="88.9"/>
+<pinref part="C13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="104.14" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="40.64" y1="99.06" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 <junction x="40.64" y="104.14"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="104.14" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -8771,18 +8770,19 @@ super fast rectifier, 2 A</description>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
 <junction x="86.36" y="104.14"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="88.9" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SW1"/>
 <wire x1="20.32" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="73.66" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
 <junction x="25.4" y="88.9"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$38" class="0">
