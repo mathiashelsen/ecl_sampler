@@ -8086,8 +8086,8 @@ super fast rectifier, 2 A</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="M0805" value="1M"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="M0805"/>
-<part name="R13" library="resistor" deviceset="R-TRIMM" device="T18"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="M0805" value="2k4"/>
+<part name="R13" library="resistor" deviceset="R-TRIMM" device="T18" value="10k"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="M0805" value="220"/>
@@ -8101,7 +8101,7 @@ super fast rectifier, 2 A</description>
 <sheet>
 <plain>
 <text x="-33.02" y="109.22" size="1.778" layer="97">Copyright 2015 by Mathias Helsen, MIT license</text>
-<text x="124.46" y="60.96" size="1.778" layer="97">-&gt; Clipping lines</text>
+<text x="124.46" y="60.96" size="1.778" layer="97">-&gt; Clipping lines, 100ps long</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="20.32" y="20.32" rot="R90"/>
@@ -8801,9 +8801,9 @@ super fast rectifier, 2 A</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SENSE"/>
 <wire x1="20.32" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="68.58" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="60.96" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="68.58" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="63.5" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="S"/>
 <wire x1="66.04" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 </segment>
